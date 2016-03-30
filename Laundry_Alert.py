@@ -4,6 +4,9 @@ from  django.template import Template, Context
 from django.conf import settings
 import sys
 
+# WHY ARE THERE NO COMMENTS?!
+# PLEASE ADD THEM!!!
+
 def main():
 	settings.configure()
 	
