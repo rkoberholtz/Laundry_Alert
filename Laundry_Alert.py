@@ -18,7 +18,7 @@ def main():
 	settings.configure()
 	
 	# Setting Variable Defaults
-    # Some of these should be available as cmd line options
+	# Some of these should be available as cmd line options
 	webpage = "/var/www/python.html"
 	threshold = "30"
 	avgnoise = 0	
