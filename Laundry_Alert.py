@@ -79,8 +79,8 @@ def main():
 		print "Previous tooNoisey result: %s" % tooNoisey(prev_normalized_noise, threshold)
 		
 		# Determine whether the state has change from the last set of samples
-        # if the state change, we need to send alerts, update webpage, etc
-        # if not, do nothing
+       		# if the state change, we need to send alerts, update webpage, etc
+       		# if not, do nothing
 		if (tooNoisey(normalized_noise, threshold) and (tooNoisey(prev_normalized_noise, threshold))):
 			skip = True
 		elif ((tooNoisey(normalized_noise, threshold) == False) and (tooNoisey(prev_normalized_noise, threshold) == False)):
@@ -111,7 +111,7 @@ def tooNoisey(noise, threshold):
 	if int(noise) < int(threshold):
 		return False
 
-#This function sends an email to the address specified with the supplies message
+# This function sends an email to the address specified with the supplies message
 def sendEmail(me, to, msg):
 	import smtplib	
 	from email.mime.text import MIMEText
@@ -124,7 +124,7 @@ def sendEmail(me, to, msg):
 	s.sendmail(me, [to], msg.as_string())
 	s.quit()		
 
-
+# This function update the HTML webpage file with the information provided 
 def publishWebpage(htmlfile, color, status):
 
 	f = open("/home/pi/template.conf",'r')
