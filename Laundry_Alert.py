@@ -23,8 +23,8 @@ def main():
 	threshold = "30"
 	avgnoise = 0	
 	prev_normalized_noise = 0
-	fromaddress = "laundry@rickelobe.com"
-	toaddress = "7173421272@message.ting.com"	
+	fromaddress = "email@example.com"
+	toaddress = "MobileNumber@carrierexample.com"	
 
 	# Setting up Raspberry Pi GPIO pins
 	GPIO.setmode(GPIO.BCM)
